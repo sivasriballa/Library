@@ -1,45 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>My Library - Books</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-
-  <header>
-    <h1>My Library</h1>
-  </header>
-
-  <div id="banner">
-    <h1>Preferred Book: "Title of Your Preferred Book"</h1>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="book">
-          <img src="book1_cover.jpg" alt="Book 1 Cover">
-          <h2>Book 1</h2>
-          <p>Author: Author Name</p>
-          <p>Description: Brief description of the book.</p>
+    <div id="sectionPopularBook"></div>
+    <div class="bg-container books-container">
+        <div>
+            <h1 class="main-heading">popular Book</h1>
+            <div class="d-flex flex-row book-container">
+                <img class="image-container" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" />
+                <div class="text-container">
+                    <h1 class="main-heading1">Wings Of Fire</h1>
+                    <p class="main-paragraph">An Autobiography of Abdhul kalam</p>
+                    <p class="main-paragraph1">by Arun Tiwari</p>
+                    <button class="btn btn-primary" onclick="display('sectionWingsOfFire')">Read Now</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="book">
-          <img src="book2_cover.jpg" alt="Book 2 Cover">
-          <h2>Book 2</h2>
-          <p>Author: Author Name</p>
-          <p>Description: Brief description of the book.</p>
+        <h1 class="main-heading2">Recommended Books</h1>
+        <div>
+            <div class="d-flex flex-row">
+                <img class="extra-books" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" />
+                <div class="book-padding">
+                    <h1 class="main-heading3">The 3 mistakes of my life</h1>
+                    <p class="paragraph">Indian author by <br /> Chetan Bhagat</p>
+                    <button class="btn btn-primary" onclick="display('sectionMistakesOfMyLife')">Read Now</button>
+                </div>
+            </div>
+            <div class="mar-up d-flex flex-row">
+                <img class="extra-books" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" />
+                <div class="book-padding">
+                    <h1 class="main-heading3">Harry Potter</h1>
+                    <p class="paragraph">and the Sorcerer's Stone<br /> by J.K.Rowling</p>
+                    <button class="btn btn-primary" onclick="display('sectionHarryPotter')">Read Now</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+    <div id="sectionWingsOfFire">
+        <div class="bg-container d-flex flex-column align-items-center">
+            <img class="wings-of-fire-book-container" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" />
+            <div class="text-container">
+                <h1 class="main-heading">Wings of Fire</h1>
+                <p class="paragraph">by Arun Tiwari</p>
+                <p class="paragraph">Every common mom who by his sister grit and hard work
+                    achieves success should share his story with the rest for
+                    they may find inspiration and strength to go on, in his
+                    story. The 'Wings of Fire' is one such autobiography by
+                    visionary scientist Dr.APJ Abdul Kalam, who from very
+                    humble beginnings rose to be the President of India. The
+                    book is full of insights, personal moments and life
+                    experiences of Dr.Kalam. It gives us an understanding on
+                    his journey of success.</p>
+                <button class="btn btn-warning" onclick="display('sectionPopularBook')">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionMistakesOfMyLife">
+        <div class="bg-container d-flex flex-column align-items-center">
+            <img class="wings-of-fire-book-container" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" />
+            <div class="text-container">
+                <h1 class="main-heading">The 3 mistakes of my life</h1>
+                <p class="paragraph">by Chetan Bhagat</p>
+                <p class="paragraph">The 3 Mistakes of my life is the third novel written by
+                    eminent Indian Author Chetan Bhagat.Based on cricket,
+                    business and religion, the novel is set against the
+                    backdrop of beautiful city Ahmedabad. Revolving around
+                    three young indian boys omi, ishaan and govind, the
+                    book goes on to narrate how the three are trying their
+                    best to make ends meet in the city. based on real events,
+                    the book starts with a dramatic twist, where Bhagat is
+                    reading an e-mail sent by some young person govind.</p>
+                <button class="btn btn-warning" onclick="display('sectionPopularBook')">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionHarryPotter">
+        <div class="bg-container d-flex flex-column align-items-center">
+            <img class="wings-of-fire-book-container" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" />
+            <div class="text-container">
+                <h1 class="main-heading">Harry potter</h1>
+                <p class="paragraph">by J.K.Rowling</p>
+                <p class="paragraph">Harry Potter's life is miserable. His parents are dead and
+                    he's stuck with his heartless relatives,who force him to
+                    live in a tiny closet under the stairs. But his fortune
+                    changes when he receives a letter that tells him the truth
+                    about himself: he's a wizard. A mysterious visitor rescues
+                    him from his relatives and takes him to his new home,
+                    Hogwarts School of Witchcraft and Wizardy. After a
+                    lifetime of bottling up his magical powers,Harry finally
+                    feels like a normal kid.</p>
+                <button class="btn btn-warning" onclick="display('sectionPopularBook')">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
+
 </html>
